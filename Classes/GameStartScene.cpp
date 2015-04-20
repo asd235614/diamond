@@ -1,8 +1,5 @@
 //
 //  GameStartScene.cpp
-//  ttgame
-//
-//  Created by zhao on 14-9-3.
 //
 //
 
@@ -18,6 +15,5 @@ bool GameStart::init(){
     {
         return false;
     }
-
-    return true;
+	return true;
 }
