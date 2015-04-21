@@ -10,7 +10,7 @@
 DiamondSprite * DiamondSprite::createDiamondSprite(int num,int r,int c){
     DiamondSprite * nc=DiamondSprite::create();
     nc->number=num;
-    nc->sp=Sprite::create(StringUtils::format("Diamond%d.png",num));
+    nc->sp=Sprite::create(StringUtils::format("Diamond/Diamond%d.png",num));
 //    auto bg=LayerColor::create(Color4B(175,175,175,125),80, 80);
 //    nc->addChild(bg);
     //nc->sp->setContentSize(Size(80,80));

@@ -1,6 +1,7 @@
 #include "AppDelegate.h"
 #include "GameStartScene.h"
-
+#define DESIGN_WIDTH 640  
+#define DESIGN_HEIGHT 960  
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {
@@ -37,7 +38,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
         glview = GLViewImpl::create("My Game");
         director->setOpenGLView(glview);
     }
-
+	glview->setFrameSize(DESIGN_WIDTH,DESIGN_HEIGHT);
+	glview->setDesignResolutionSize(DESIGN_WIDTH,DESIGN_HEIGHT,ResolutionPolicy::SHOW_ALL); 
     // turn on display FPS
     director->setDisplayStats(true);
 
